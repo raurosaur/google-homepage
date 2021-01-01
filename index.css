@@ -1,25 +1,82 @@
-body{
-    font-family: Roboto, sans-serif;
-    font-size: 3vmin;
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.google.com/specimen/Roboto?query=roboto);
 }
-.centered{
+
+body{   
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav{
     display: flex;
+    align-self: flex-end;
 }
-#logo{
-    align-items: center;
-    font-size: 4em;
+
+.nav div{
+    padding: 10px;
 }
-#search-area{
+
+#acc{
+    background-color: darkgrey;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+form{
     display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: centerss;
+    border: 1px solid black;
+    width: 60%;
+    justify-content: center;
+    border-radius: 20px;
 }
-#search{
-    min-width: 75vmax;
+
+input{
+    border: none;
 }
-.footer-container{
-    font-size: 2.5vmin;
-    display: grid;
-    grid-template-columns: repeat(auto-fit 1fr);
+
+.lang{
+    align-self: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .google-search, .feel-lucky{
+    border: 2px solid darkblue;
+    margin: 20px;
+}
+
+.buttons .google-search:hover, .feel-lucky:hover{
+    border: 2px solid yellow;
+    margin: 20px;
+    transform: scale(1.15);
+}
+
+.search-bar{
+    align-self: center;
+}
+
+.search{
+    justify-self: center;
+    align-self: center;
+}
+.footer{
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column;
+}
+
+.footer .footer-container{
+    display: flex;
+    justify-self: flex-end;
+}
+
+.footer div{
+    margin: 10px;
 }
