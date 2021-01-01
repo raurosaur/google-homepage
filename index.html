@@ -4,47 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            font-family: Roboto, sans-serif;
-        }
-        #logo{
-            margin: auto;
-            font-size: 10vw;
-            width: 55%;
-            text-align: center;
-            padding: 25%;
-        }
-        .search-area{
-            position: absolute;
-            top: 50%;
-            font-size: 70px;
-        }
-        #search{
-            margin: auto;
-        }
-    </style>
+    <link rel = 'stylesheet' href = 'index.css'>
 </head>
 <body>
-    <nav>
-
+    <nav class="navbar">
+        <div>Gmail</div>
+        <div>Images</div>
+        <!-- The gridbox and Icon -->
     </nav>
 
+    <div class = 'centered'>
     <h1 id = 'logo'>Google</h1>
+    </div>
 
-    <form id = 'search-area'>
-        <span id='search'> <input type='text' style="width: 80%;"></span>
-        <br>
-        <div class='search'>
-            <button type = 'submit' id = 'google-search'>Google Search</button>
-            <button type = 'submit' id = feeling-lucky>I'm Feeling Lucky</button>
-        </div>
+    <div id = 'search-area'>
+        <form>
+            <div id='search'> <input type='text' style="width: 80%;"></div>
+            <br>
+            <div class='search'>
+                <button type = 'submit' id = 'google-search'>Google Search</button>
+                <button type = 'submit' id = feeling-lucky>I'm Feeling Lucky</button>
+            </div>
+        </form>
+        <!-- Google offered in -->
+        <p>हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</p>
+    </div>
 
-    </form>
-    
-
-    <footer class = 'container'>
-
+    <footer class = 'footer-container'>
+        <div>Country</div>
+        <div>Privacy</div>
+        <div>Terms</div>
+        <div>Settings</div>
+        <div>Advertising</div>
+        <div>Business</div>
+        <div>About</div>
+        <div>How Search Works</div>
     </footer>
 </body>
 </html>
