@@ -12,17 +12,22 @@ body{
 .nav{
     display: flex;
     align-self: flex-end;
+    color: rgb(101, 98, 98);
 }
 
 .nav div{
     padding: 10px;
 }
 
+.nav div:hover{
+    text-decoration: underline;
+}
 .nav #icon{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding-top: 5px;
     padding-right: 10px;
+    padding-left: 10px;
     opacity: 30%;
 }
 
@@ -30,10 +35,12 @@ body{
     opacity: 100%;
 }
 #acc{
-    background-color: darkgrey;
+    position: relative;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    top: -5px;
 }
 
 form{
@@ -52,6 +59,14 @@ form #glass{
     height: 2vmin;
 }
 
+img{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 form:hover{
     box-shadow: 0px 0px 10px 1px rgba(77, 67, 67, 0.276);
 }
@@ -66,6 +81,14 @@ input:focus{
 
 .lang{
     align-self: center;
+}
+
+.lang span{
+    color: rgb(51, 6, 180);
+}
+
+.lang span:hover{
+    text-decoration: underline;
 }
 
 .buttons{
@@ -104,17 +127,25 @@ input:focus{
     position: absolute;
     bottom: 0;
     left: 0;
-    border:1px solid rgb(121, 121, 121);
+    border:1px solid rgb(218, 220,224);
 }
 .footer #country{
     padding-left: 12px;
 }
 .footer .footer-container{
-    border-top: 1px solid rgb(121, 121, 121);
+    border-top: 1px solid rgb(218, 220,224);
     display: flex;
     width: 99vw;
 }
 
 .footer div{
     margin: 3px 6px 6px 6px;
+}
+
+.footer #gap{
+    width: 58%;
+}
+
+.footer .footer-container div:hover{
+    text-decoration: underline;
 }
