@@ -19,6 +19,7 @@ body{
     align-self: flex-end;
     color: rgb(101, 98, 98);
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .nav div{
@@ -133,7 +134,8 @@ input:focus{
     background-color: rgb(242, 242, 242);
     color: rgb(101, 98, 98);
     border:1px solid rgb(218, 220,224);
-    margin-top: 10rem;
+    position: fixed;
+    bottom: 0px;
 }
 
 .footer #country{
@@ -168,8 +170,5 @@ input:focus{
     }
     #search-bar{
         width: 27rem;
-    }
-    .footer{
-        margin-top: 15rem;
     }
 }
