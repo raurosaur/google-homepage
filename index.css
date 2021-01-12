@@ -3,16 +3,22 @@
   src: url(https://fonts.google.com/specimen/Roboto?query=roboto);
 }
 
-body{   
+body{
+    margin: 0px;
+}
+
+.parent{   
   font-family: arial, sans-serif;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .nav{
     display: flex;
     align-self: flex-end;
     color: rgb(101, 98, 98);
+    cursor: pointer;
 }
 
 .nav div{
@@ -48,15 +54,13 @@ form{
     border: 1px solid rgb(223, 225, 229);
     width: 40vmax;
     height: 5vmin;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     border-radius: 4vmin;
 }
-
 form #glass{
-    position: relative;
-    top: 12px;
-    left: -10px;
     height: 2vmin;
+    margin-left: 20px;
 }
 
 img{
@@ -83,17 +87,19 @@ input:focus{
     align-self: center;
 }
 
-.lang span{
+.lang .blue{
     color: rgb(51, 6, 180);
+    cursor: pointer;
 }
 
-.lang span:hover{
+.lang .blue:hover{
     text-decoration: underline;
 }
 
 .buttons{
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .buttons .google-search, .feel-lucky{
@@ -111,7 +117,9 @@ input:focus{
 .search-bar{
     align-self: center;
 }
-
+#search-bar{
+    font-size: 18px;
+}
 .logo{
     justify-self: center;
     align-self: center;
@@ -124,14 +132,14 @@ input:focus{
     flex-direction: column;
     background-color: rgb(242, 242, 242);
     color: rgb(101, 98, 98);
-    position: absolute;
-    bottom: 0;
-    left: 0;
     border:1px solid rgb(218, 220,224);
+    margin-top: 10rem;
 }
+
 .footer #country{
     padding-left: 12px;
 }
+
 .footer .footer-container{
     border-top: 1px solid rgb(218, 220,224);
     display: flex;
@@ -146,6 +154,22 @@ input:focus{
     width: 58%;
 }
 
+.footer-container div{
+    cursor: pointer;
+}
+
 .footer .footer-container div:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 600px){
+    form{
+        width: 500px;
+    }
+    #search-bar{
+        width: 27rem;
+    }
+    .footer{
+        margin-top: 15rem;
+    }
 }
